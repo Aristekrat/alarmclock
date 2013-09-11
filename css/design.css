@@ -1,0 +1,248 @@
+/***Alarm Clock Widget CSS. BC 08/30/13***/ 
+
+html, body { 
+padding: 						0; 
+margin: 						0;
+border:							0; 
+}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+@font-face {
+    font-family: 'DS-DIGIB';
+    src: url('./DS-DIGIB.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DigiLetters';
+    src: url('./DS-DIGI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*:focus {
+	outline: 0; 
+}
+
+/**** Style Rules ****/
+
+#alarmClock {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  background: url("../images/widget-background.jpg"); 
+}	#alarmClock h1, #alarmClock h3 {
+		width: 20%; 
+		float: left; 
+		display: inline-block; 
+		position: relative;
+		left: 36%;
+		top: 30%; 
+}	#alarmClock h1{
+		font-family: 'DS-DIGIB', arial, sans-serif;
+		color: #ddfeff; 
+		font-size: 2.6em;
+		text-shadow: 0 1px 1px #ddfeff, 0 -1px 1px #ddfeff,  0 4px 30px rgba(221, 254, 255, .7);
+}	#alarmClock h3 {
+		font-family: 'DigiLetters', verdana, sans-serif;
+		color: #ddfeff; 
+		font-size: 1.4em;
+		text-shadow: 0 4px 30px rgba(221, 254, 255, .7);
+		margin: 11% 0 0 -3%; 
+}		
+
+#alarmMinHourContainer {
+	position: absolute; 
+	top: 62.5%; 
+	left: 24.5%; 
+	width: 4%; 
+	height: 22%;
+}	#alarmMinHourContainer div { 
+	width: 100%; 
+	height: 25%; 
+	cursor: pointer; 
+}
+#alarmSliderContainer {
+	position: absolute; 
+	top: 58%; 
+	left: 40.5%; 
+	width: 41%; 
+	height: 10%; 
+}	#alarmSliderContainer div {
+		width: 100%; 
+		height: 25%; 
+		border-radius: 15px;
+		background: #232323; 
+		box-shadow: inset 0 -1px 0 #464648; 
+		top: 35%; 
+		position: absolute;
+}	
+/***jQuery UI CSS for the Slider Button***/ 	
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0);
+}
+.ui-front {
+	z-index: 100;
+}
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+/* For IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+.ui-slider-horizontal {
+	height: .8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.3em;
+	margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	background: url("../images/main-sprite.png") 50% 3% no-repeat;
+	background-size: 250%;  
+	border-radius: 50%; 
+	cursor: pointer; 
+}
+/***End jQuery UI CSS for the Slider Button***/ 
+
+#alarmRightPanel {
+	width: 12.5%; 
+	height: 20%;
+	position: absolute;
+	top: 35.6%; 
+	right: 18.4%;
+}	#alarmRightPanel figure {
+		display: inline !important; 
+		float: left;
+		position: relative;   
+		height: 40%;
+		margin: 1% 0 0 1%;
+		cursor: pointer; 
+}	#alarmUpButton {
+		background: url("../images/main-sprite.png") 23% 19% no-repeat;
+		background-size: 300%; 
+		width: 49%; 
+}		#alarmUpButton:active {
+			background-position: 19% 42.5%;
+}	#alarmDownButton {
+		background: url("../images/main-sprite.png") 76% 19% no-repeat;
+		background-size: 300%; 
+		width: 49%;
+}		#alarmDownButton:active {
+			background-position: 76% 42.5%; 
+}		
+	
+#alarmPowerButton, #alarmLED {
+	cursor: pointer; 
+}	
+#alarmPowerButton {
+	width: 100%;
+	height: 49%;
+	top: 18%; 
+	background: url("../images/main-sprite.png") 53% 65.5% no-repeat;
+	background-size: 140%; 
+}	#alarmPowerButton:active {
+		background-position: 53% 90%;
+}	
+#alarmLED {
+	width: 18%; 
+	height: 36%; 
+	border-radius: 50%;
+	margin: 15.5% 0 0 15%;
+}	figure div { /*Selector refers to alarmLED. Weak selector used to make the "off" background the default*/
+		opacity: .5; 
+		background-color: #343434;  
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#b0b0b0), to(#343434));
+		background-image: -webkit-linear-gradient(top, #b0b0b0, #343434);
+		background-image: -moz-linear-gradient(top, #b0b0b0, #343434);
+		background-image: -o-linear-gradient(top, #b0b0b0, #343434);
+		background-image: linear-gradient(to bottom, #b0b0b0, #343434); 
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#b0b0b0, endColorstr=#343434);
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#b0b0b0, endColorstr=#343434)";
+		box-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000; 
+}	.alarmOn {
+		opacity: 1; 
+		background-color: #ddfeff;  
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddfeff));
+		background-image: -webkit-linear-gradient(top, #fff, #ddfeff);
+		background-image: -moz-linear-gradient(top, #fff, #ddfeff);
+		background-image: -o-linear-gradient(top, #fff, #ddfeff);
+		background-image: linear-gradient(to bottom, #fff, #ddfeff); 
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fff, endColorstr=#ddfeff);
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#fff, endColorstr=#ddfeff)";
+		box-shadow: 2px 0 4px rgba(221, 254, 255, .3), -2px 0 4px rgba(221, 254, 255, .3), -0 2px 4px rgba(221, 254, 255, .3), 0 -2px 4px rgba(221, 254, 255, .3); 
+}
