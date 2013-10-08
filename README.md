@@ -1,4 +1,17 @@
-alarmclock
-==========
+The Alarmclock
+==============
 
-A mini-project I built to showcase my front-end skills. 
+This is a mini-project I built to showcase my front-end skills. 
+You can see and use the alarmclock at: www.masspire.com/alarmclock
+
+The alarm clock uses advanced CSS3, jQuery, jQueryUI, and web workers. 
+
+To bring it to life, I had to overcome a couple of challenges, such as 
+handling the conversion from minutes to hours, ensuring all functions 
+performed appropriately regardless of the setting, rounding the hours 
+in the display yet yielding correct calculations, and managing many 
+related pieces of functionality. 
+
+The javascript file in particular would likely be very interesting 
+for anyone looking to assess my javascript skills. 
+
