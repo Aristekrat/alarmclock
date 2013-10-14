@@ -2,7 +2,7 @@ The Alarmclock
 ==============
 
 This is a mini-project I built to showcase my front-end skills. 
-You can see and use the alarmclock at: www.masspire.com/alarmclock
+You should be able to download and spawn it locally without any problems. 
 
 The alarm clock uses advanced CSS3, jQuery, jQueryUI, and web workers. 
 
