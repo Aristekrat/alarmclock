@@ -9,23 +9,33 @@ border:							0;
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 @font-face {
+<<<<<<< HEAD
     font-family: 'ds-digitalbold';
     src: url('ds-digib-webfont.eot');
     src: url('ds-digib-webfont.eot?#iefix') format('embedded-opentype'),
          url('ds-digib-webfont.woff') format('woff'),
          url('ds-digib-webfont.ttf') format('truetype'),
          url('ds-digib-webfont.svg#ds-digitalbold') format('svg');
+=======
+    font-family: 'DS-DIGIB';
+    src: url('./DS-DIGIB.ttf') format('truetype');
+>>>>>>> 4d76e12b78a0e3891e4f0d09964ca56aa1f36a65
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
+<<<<<<< HEAD
     font-family: 'ds-digitalnormal';
     src: url('ds-digi-webfont.eot');
     src: url('ds-digi-webfont.eot?#iefix') format('embedded-opentype'),
          url('ds-digi-webfont.woff') format('woff'),
          url('ds-digi-webfont.ttf') format('truetype'),
          url('ds-digi-webfont.svg#ds-digitalnormal') format('svg');
+=======
+    font-family: 'DigiLetters';
+    src: url('./DS-DIGI.ttf') format('truetype');
+>>>>>>> 4d76e12b78a0e3891e4f0d09964ca56aa1f36a65
     font-weight: normal;
     font-style: normal;
 }
@@ -49,12 +59,20 @@ border:							0;
 		left: 35%;
 		top: 30%; 
 }	#alarmClock h1{
+<<<<<<< HEAD
 		font-family: 'ds-digitalnormal', arial, sans-serif;
+=======
+		font-family: 'DS-DIGIB', arial, sans-serif;
+>>>>>>> 4d76e12b78a0e3891e4f0d09964ca56aa1f36a65
 		color: #ddfeff; 
 		font-size: 2.6em;
 		text-shadow: 0 1px 1px #ddfeff, 0 -1px 1px #ddfeff,  0 4px 30px rgba(221, 254, 255, .7);
 }	#alarmClock h3 {
+<<<<<<< HEAD
 		font-family: 'ds-digitalnormal', verdana, sans-serif;
+=======
+		font-family: 'DigiLetters', verdana, sans-serif;
+>>>>>>> 4d76e12b78a0e3891e4f0d09964ca56aa1f36a65
 		color: #ddfeff; 
 		font-size: 1.4em;
 		text-shadow: 0 4px 30px rgba(221, 254, 255, .7);
