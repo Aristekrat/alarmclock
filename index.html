@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<head>
+<title>Alarm Clock!</title>
+<meta name="Meta Description" content="this is an alarm clock">
+<link rel="stylesheet" type="text/css" href="css/design.css">
+</head>
+
+<body>
+<div id="alarmclock">
+
+	<span>
+		<h1>100</h1>
+		<h3>MIN</h3>
+	</span>
+	
+	<span id="alarmMinHourContainer">
+		<div></div>
+	</span>
+	
+	<span id="alarmSliderContainer">
+		<div>
+			<span class="blueBackground"></span>
+			<span class="blackBackground"></span>
+		</div><!--This div contains the slider background. It is generated entirely through CSS.-->
+	</span>
+	
+	<span id="alarmRightPanel">
+		<figure id="alarmUpButton">
+		</figure>
+		<figure id="alarmDownButton">
+		</figure>
+		<figure id="alarmPowerButton">
+			<div id="alarmLED" class="alarmOn">
+			</div>
+		</figure>
+	</span>
+
+</div>
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="js/alarmclock-utility.js" ></script>
+<!--400 x 300--> 
